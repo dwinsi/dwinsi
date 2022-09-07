@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @dwinsi
 - 👀 I’m interested in learning programming.
 - 🌱 I’m currently learning IoT, Cloud (AWS), BlockChain, Android
-- 💞️ I’m looking to collaborate on ...
+- 💞️ I’m looking to collaborate on AWS IoT
 - 📫 How to reach me ... winsimash@gmail.com
 
 <!---
