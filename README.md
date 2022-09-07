@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @dwinsi
+- 👋 Hi, I’m (@dwinsi) Ashwin Singh.
 - 👀 I’m interested in learning programming.
 - 🌱 I’m currently learning IoT, Cloud (AWS), BlockChain, Android
 - 💞️ I’m looking to collaborate on AWS IoT
