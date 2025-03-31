@@ -11,23 +11,15 @@ I'm a **DevOps Engineer** specializing in **Microsoft technologies**, including 
   - Microsoft Certified: DevOps Engineer Expert (AZ-400)
   - Microsoft Certified: Azure Developer Associate (AZ-204)
 
-## 👀 My Journey in Tech
+## 👀 My Interests & Learning Journey
 
-I've always been passionate about **technology and automation**, and my curiosity drives me to explore new frontiers. Whether it's **CI/CD pipelines**, **cloud computing**, or **automation scripting**, I enjoy solving complex problems and optimizing workflows.
+Technology excites me! I'm always exploring new domains to expand my skill set. Here’s what I’m currently diving into:
 
-## 🌱 Learning & Growth
+- 🚀 **I’m interested in learning more about programming** and mastering various tech stacks.
+- 🌱 **Currently learning:** IoT, Cloud (AWS), Blockchain, Android, and Web Development.
+- 🤝 **Looking to collaborate on AWS IoT** projects.
 
-I'm constantly evolving and expanding my skill set! I would like to diving into:
-
-- **Internet of Things (IoT)**
-- **Cloud Computing (AWS)**
-- **Blockchain**
-- **Android Development**
-- **Web Development**
-
-## 💞️ Let's Collaborate!
-
-I'm eager to work with like-minded individuals who share my enthusiasm for technology. If you're working on **AWS IoT projects**, let's connect and build something amazing together! 🤝
+If you're working on something exciting in these areas, let’s connect and innovate together!
 
 ## 🔧 Skills & Technologies
 
@@ -45,13 +37,15 @@ I'm eager to work with like-minded individuals who share my enthusiasm for techn
 - 🔹 Created CI/CD pipelines to **reduce deployment failures** and optimize release processes
 - 🔹 Designed **Infrastructure as Code (IaC) solutions** for Azure using Terraform and ARM templates
 
-## 📫 How to Reach Me
+## 📫 Let's Connect!
 
-- 💼 [LinkedIn](#)  
-- 🌐 [GitHub](https://github.com/your-github-username)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/dwinsi/)  
+- 🌐 [GitHub](https://github.com/dwinsi)  
+- 🎓 [![Microsoft Transcript](https://img.shields.io/badge/Microsoft-Transcript-blue?logo=microsoft)](https://learn.microsoft.com/en-us/users/ashwinikumar-6848/transcript/d4r40i9o0658xp5?tab=credentials-tab)  
 - 📧 Email: **winsimash@gmail.com**  
 
 🚀 Always open to collaborations and discussions on **DevOps, automation, and cloud technologies**!
+
 
 
 <!---
