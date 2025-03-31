@@ -34,14 +34,13 @@ If you're working on something exciting in these areas, let’s connect and inno
 
 - 🔹 Developed a **multithreaded PowerShell script** to scale reporting tools in Azure DevOps
 - 🔹 Built an **automated work item management tool** using Azure DevOps REST API
-- 🔹 Created CI/CD pipelines to **reduce deployment failures** and optimize release processes
-- 🔹 Designed **Infrastructure as Code (IaC) solutions** for Azure using Terraform and ARM templates
+
 
 ## 📫 Let's Connect!
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/dwinsi/)  
 - 🌐 [GitHub](https://github.com/dwinsi)  
-- 🎓 [![Microsoft Transcript](https://img.shields.io/badge/Microsoft-Transcript-blue?logo=microsoft)](https://learn.microsoft.com/en-us/users/ashwinikumar-6848/transcript/d4r40i9o0658xp5?tab=credentials-tab)  
+- 🎓 [Microsoft Transcript](https://learn.microsoft.com/en-us/users/ashwinikumar-6848/transcript/d4r40i9o0658xp5?tab=credentials-tab)  
 - 📧 Email: **winsimash@gmail.com**  
 
 🚀 Always open to collaborations and discussions on **DevOps, automation, and cloud technologies**!
