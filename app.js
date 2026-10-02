@@ -1,28 +1,27 @@
 /**
- * Ashwini Kumar Singh (dwinsi) Portfolio JavaScript
- * Modern Interactive Behaviors & Progressive Enhancement
+ * Ashwini Kumar Singh (dwinsi) Portfolio — Apple Pro Design Engine
+ * Seamless Theme Switching, Apple Segmented Filters & Interaction
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initThemeToggle();
-  initProjectFilters();
+  initSegmentedProjectFilters();
   initMobileMenu();
   initEmailCopy();
-  initScrollSpy();
+  initAppleScrollSpy();
   initFooterYear();
-  initInteractiveTerminal();
 });
 
 /**
- * Theme Toggle: Dark / Light Mode with Local Storage persistence
+ * Apple Theme Toggle (Pitch Black Pro Dark / Crisp Minimal Light)
  */
 function initThemeToggle() {
   const toggleBtn = document.getElementById('theme-toggle');
   if (!toggleBtn) return;
 
-  const savedTheme = localStorage.getItem('theme');
+  const savedTheme = localStorage.getItem('apple_theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const currentTheme = savedTheme || (prefersDark ? 'dark' : 'dark'); // Default to dark for premium cyberpunk aesthetic
+  const currentTheme = savedTheme || (prefersDark ? 'dark' : 'dark');
 
   document.documentElement.setAttribute('data-theme', currentTheme);
 
@@ -30,22 +29,22 @@ function initThemeToggle() {
     const activeTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
+    localStorage.setItem('apple_theme', newTheme);
   });
 }
 
 /**
- * Filter Projects by Category (All, AI & LLMs, Mobile & Security, DevOps & Cloud)
+ * Apple Segmented Control: Dynamic Project Filter
  */
-function initProjectFilters() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
+function initSegmentedProjectFilters() {
+  const filterBtns = document.querySelectorAll('.seg-btn');
+  const projectCards = document.querySelectorAll('.apple-card');
 
   if (!filterBtns.length || !projectCards.length) return;
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Update active button state
+      // Toggle active state
       filterBtns.forEach(b => {
         b.classList.remove('active');
         b.setAttribute('aria-selected', 'false');
@@ -55,18 +54,18 @@ function initProjectFilters() {
 
       const filterValue = btn.getAttribute('data-filter');
 
-      // Filter project cards
+      // Filter cards with Apple-like subtle fade
       projectCards.forEach(card => {
         const categories = (card.getAttribute('data-category') || '').split(' ');
         if (filterValue === 'all' || categories.includes(filterValue)) {
           card.classList.remove('hidden');
-          // Subtle fade/scale reveal
           card.style.opacity = '0';
-          card.style.transform = 'translateY(10px)';
+          card.style.transform = 'scale(0.98)';
           setTimeout(() => {
+            card.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
             card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          }, 30);
+            card.style.transform = 'scale(1)';
+          }, 20);
         } else {
           card.classList.add('hidden');
         }
@@ -76,31 +75,30 @@ function initProjectFilters() {
 }
 
 /**
- * Mobile Navigation Drawer Toggle
+ * Apple Mobile Navigation
  */
 function initMobileMenu() {
   const menuBtn = document.getElementById('mobile-menu-btn');
-  const navLinks = document.getElementById('nav-links');
+  const navList = document.getElementById('apple-nav-list');
 
-  if (!menuBtn || !navLinks) return;
+  if (!menuBtn || !navList) return;
 
   menuBtn.addEventListener('click', () => {
     const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
     menuBtn.setAttribute('aria-expanded', !isExpanded);
-    navLinks.classList.toggle('mobile-open');
+    navList.classList.toggle('mobile-open');
   });
 
-  // Close mobile menu on link click
-  navLinks.querySelectorAll('.nav-link').forEach(link => {
+  navList.querySelectorAll('.nav-item').forEach(link => {
     link.addEventListener('click', () => {
       menuBtn.setAttribute('aria-expanded', 'false');
-      navLinks.classList.remove('mobile-open');
+      navList.classList.remove('mobile-open');
     });
   });
 }
 
 /**
- * Copy Email to Clipboard with Smooth Toast Notification
+ * Apple 1-Click Email Copy with Centered Pill Toast
  */
 function initEmailCopy() {
   const copyButtons = [
@@ -110,16 +108,16 @@ function initEmailCopy() {
 
   const toast = document.getElementById('toast');
   const toastMsg = document.getElementById('toast-message');
-  let toastTimeout;
+  let toastTimer;
 
-  function showToast(message) {
+  function showAppleToast(message) {
     if (!toast) return;
     if (toastMsg) toastMsg.textContent = message;
     toast.classList.add('show');
-    clearTimeout(toastTimeout);
-    toastTimeout = setTimeout(() => {
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
       toast.classList.remove('show');
-    }, 3200);
+    }, 2800);
   }
 
   copyButtons.forEach(btn => {
@@ -139,26 +137,26 @@ function initEmailCopy() {
           document.execCommand('copy');
           document.body.removeChild(textarea);
         }
-        showToast(`Copied ${email} to clipboard!`);
+        showAppleToast('Copied email to clipboard');
       } catch (err) {
-        showToast(`Email: ${email}`);
+        showAppleToast(`Email: ${email}`);
       }
     });
   });
 }
 
 /**
- * ScrollSpy: Highlights Active Navigation Link based on Scroll Position
+ * Apple Navigation Active Link Highlighting (ScrollSpy)
  */
-function initScrollSpy() {
+function initAppleScrollSpy() {
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-link');
+  const navItems = document.querySelectorAll('.nav-item');
 
-  if (!sections.length || !navLinks.length) return;
+  if (!sections.length || !navItems.length) return;
 
   const observerOptions = {
     root: null,
-    rootMargin: '-20% 0px -60% 0px',
+    rootMargin: '-20% 0px -70% 0px',
     threshold: 0
   };
 
@@ -166,42 +164,26 @@ function initScrollSpy() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute('id');
-        navLinks.forEach(link => {
-          if (link.getAttribute('href') === `#${id}`) {
-            link.classList.add('active');
+        navItems.forEach(item => {
+          if (item.getAttribute('href') === `#${id}`) {
+            item.classList.add('active');
           } else {
-            link.classList.remove('active');
+            item.classList.remove('active');
           }
         });
       }
     });
   }, observerOptions);
 
-  sections.forEach(section => observer.observe(section));
+  sections.forEach(sec => observer.observe(sec));
 }
 
 /**
- * Dynamic Footer Year
+ * Dynamic Year in Footer
  */
 function initFooterYear() {
   const yearEl = document.getElementById('current-year');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
-}
-
-/**
- * Interactive Terminal Hover Glow Effect
- */
-function initInteractiveTerminal() {
-  const terminal = document.querySelector('.terminal-card');
-  if (!terminal) return;
-
-  terminal.addEventListener('mousemove', (e) => {
-    const rect = terminal.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    terminal.style.setProperty('--mouse-x', `${x}px`);
-    terminal.style.setProperty('--mouse-y', `${y}px`);
-  });
 }
