@@ -31,18 +31,20 @@ If you're working on something exciting in these areas, let's connect and build 
 - **CI/CD & DevOps:** Azure DevOps, GitHub Actions, Infrastructure as Code (Bicep, ARM Templates)
 - **Scripting & Automation:** PowerShell (advanced), Python, C#, multithreaded runspace frameworks
 - **AI & LLM Engineering:** PyTorch, LangChain, LangGraph, RAG, MCP, Ollama, vector embeddings
+- **Mobile & Offline-First:** Android (Kotlin, Jetpack Compose, Room, SQLCipher, KeyStore/TEE, Web Bluetooth)
 - **APIs & Integrations:** Microsoft Graph API, Azure DevOps REST API, MSAL authentication
 - **Cloud Computing:** Microsoft Azure (Azure Pipelines, Azure Monitor, Application Insights)
 - **Microsoft 365:** Exchange Online administration, O365 operations
 - **Version Control:** Git, GitHub, Azure Repos
 
 ## 📌 Projects & Contributions
-- 🧠 **[LLM From Scratch](https://github.com/dwinsi/LLMfromScratch):** an end-to-end series building a language model from first principles, covering transformers, LLaMA-style components (RMSNorm, RoPE, SwiGLU), Grouped Query Attention, Mixture of Experts, and BPE tokenisation.
+- 🔐 **[Kunjika](https://github.com/dwinsi/kunjika):** a 100% offline, sovereign Android password vault and 2FA authenticator with zero internet permissions, hardware-backed AES-256-GCM encryption, SQLCipher, and Web Bluetooth PC drop.
+- 🧠 **[LLM From Scratch](https://github.com/dwinsi/LLMfromScratch):** an end-to-end series building a language model from first principles, covering transformers, LLaMA-style components (RMSNorm, RoPE, SwiGLU), Grouped Query Attention, Mixture of Experts, and BPE tokenization.
 - 🔎 **RAG Knowledge Assistant:** a Retrieval-Augmented Generation pipeline with document chunking, vector embeddings, and context-augmented prompting for source-cited answers.
 - 🔌 **MCP Automation Server:** a custom Model Context Protocol server exposing infrastructure and reporting tools to LLM clients through typed schemas.
 - 🕸️ **LangGraph Multi-Agent Workflow:** stateful, graph-based agent orchestration with conditional routing and cyclic reasoning.
 - 🐚 **Saathi-CLI:** an agentic AI command-line tool built with LangChain ReAct, running Gemma models locally via Ollama with LangSmith tracing.
-- ⚡ **Multithreaded PowerShell reporting framework:** a producer-consumer runspace system that scaled Azure DevOps and Microsoft 365 reporting, cutting processing time from Days to minutes.
+- ⚡ **Multithreaded PowerShell reporting framework:** a producer-consumer runspace system that scaled Azure DevOps and Microsoft 365 reporting, cutting processing time from days to minutes.
 
 ## 📫 Let's Connect!
 - 💼 [LinkedIn](https://www.linkedin.com/in/dwinsi/)
